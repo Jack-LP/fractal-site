@@ -7,7 +7,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fractal Design</title>
   </head>
-  <body>
-    <h1 class="text-red-500">Hello</h1>
+  <body class="bg-charcoal">
+    <!-- navbar -->
+    <nav
+      class="flex relative z-10 p-10 bg-transparent text-white justify-between items-center"
+    >
+      <div class="flex gap-8">
+        <a href="#">Products</a>
+        <a href="#">Community</a>
+        <a href="#">Where to buy</a>
+      </div>
+      <img
+        src="/logo.svg"
+        alt="Fractal logo"
+        class="invert absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40"
+      />
+      <div class="flex gap-8">
+        <a href="#">Support</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+
+    <!-- hero vid -->
+    <video
+      src="/hero-vid.mp4"
+      loop
+      muted
+      class="absolute top-0 left-0 w-screen h-screen overflow-hidden object-cover"
+    ></video>
+    <div
+      class="absolute top-0 left-0 w-screen h-screen bg-gradient-to-b from-black/60 to-transparent"
+    ></div>
+
+    <!-- hero title -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-6 items-center text-white"
+    >
+      <h2>Transform your gaming space</h2>
+      <h1 class="text-7xl">North</h1>
+      <div class="flex gap-8 mt-10">
+        <button class="bg-black uppercase py-4 px-12">Product Page</button>
+        <button class="bg-black uppercase py-4 px-12">News Post</button>
+      </div>
+    </div>
+
+    <!-- scroll button -->
+    <a
+      href="#"
+      class="absolute bottom-10 left-1/2 -translate-x-1/2 -translate-y-1/2"
+    >
+      <img
+        class="w-8 invert hover:translate-y-2 transition duration-300 ease-out"
+        src="/arrow.svg"
+        alt=""
+      />
+    </a>
+
+    <!-- news section -->
+    <section class="p-14 flex flex-col gap-14 mt-[100vh]">
+      <div
+        class="relative w-full h-[930px] text-white overflow-hidden cursor-pointer"
+      >
+        <img
+          src="/torrent-family.jpg"
+          alt=""
+          class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out"
+        />
+        <h3 class="absolute top-20 left-20 font-semibold text-lg">
+          Product News
+        </h3>
+        <div class="absolute left-20 bottom-20 flex flex-col gap-14">
+          <h2 class="text-7xl font-semibold">
+            Introducing a brand new look for the <br />
+            Torrent Series
+          </h2>
+          <a href="#" class="uppercase tracking-widest">Read More</a>
+        </div>
+      </div>
+
+      <div class="flex gap-14 text-white h-[930px]">
+        <div class="relative overflow-hidden cursor-pointer flex-1">
+          <img
+            src="/pci-riser.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out"
+          />
+          <h3
+            class="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-lg"
+          >
+            Product News
+          </h3>
+          <h2
+            class="absolute w-[80%] text-5xl font-semibold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            Information regarding Ridge riser card - PCIe 4.0
+          </h2>
+          <a
+            href="#"
+            class="absolute bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase tracking-widest"
+            >Read More</a
+          >
+        </div>
+
+        <div class="relative overflow-hidden cursor-pointer flex-1">
+          <img
+            src="/north-kv8.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out"
+          />
+          <h3
+            class="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-lg"
+          >
+            Product News
+          </h3>
+          <h2
+            class="absolute w-[80%] text-5xl font-semibold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            Introducing North
+          </h2>
+          <a
+            href="#"
+            class="absolute bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase tracking-widest"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- parts section -->
+    <section class="p-14 bg-bone grid grid-cols-3 grid-rows-2 gap-14">
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Cases
+        </h3>
+        <img
+          src="/cases.jpg"
+          alt=""
+          class="w-[450px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Fans
+        </h3>
+        <img
+          src="/fans.webp"
+          alt=""
+          class="w-[450px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Power Supplies
+        </h3>
+        <img
+          src="/power-supplies.jpg"
+          alt=""
+          class="w-[450px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Water Cooling
+        </h3>
+        <img
+          src="/water-cooling.webp"
+          alt=""
+          class="w-[450px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Accessories
+        </h3>
+        <img
+          src="/accessories.jpg"
+          alt=""
+          class="w-[450px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center py-10 bg-white group hover:shadow-xl duration-700 ease-out cursor-pointer"
+      >
+        <h3
+          class="text-2xl z-10 font-semibold group-hover:text-sky duration-700 ease-out"
+        >
+          Community Mods
+        </h3>
+        <img
+          src="/community-mods.jpg"
+          alt=""
+          class="w-[390px] group-hover:scale-[1.02] duration-700 ease-out"
+        />
+        <a
+          href="#"
+          class="uppercase z-10 text-sm font-semibold tracking-widest group-hover:text-sky duration-700 ease-out"
+          >See More</a
+        >
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="p-14 flex flex-col gap-14 bg-bone">
+      <div class="grid grid-cols-2 grid-rows-2 gap-14">
+        <div class="flex flex-col overflow-hidden gap-4 h-[600px]">
+          <img
+            src="/pci-riser.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out cursor-pointer"
+          />
+          <h2
+            class="text-4xl font-semibold cursor-pointer hover:text-sky duration-200 ease-out"
+          >
+            Information regarding Ridge riser card - PCIe 4.0
+          </h2>
+          <h4 class="text-black/50 font-semibold">Jan 12, 2023</h4>
+        </div>
+
+        <div class="flex flex-col overflow-hidden gap-4 h-[600px]">
+          <img
+            src="/north-family.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out cursor-pointer"
+          />
+          <h2
+            class="text-4xl font-semibold cursor-pointer hover:text-sky duration-200 ease-out"
+          >
+            Introducing North
+          </h2>
+          <h4 class="text-black/50 font-semibold">Dec 07, 2022</h4>
+        </div>
+
+        <div class="flex flex-col overflow-hidden gap-4 h-[600px]">
+          <img
+            src="/torrent-family.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out cursor-pointer"
+          />
+          <h2
+            class="text-4xl font-semibold cursor-pointer hover:text-sky duration-200 ease-out"
+          >
+            Introducing a brand new look for the Torrent series
+          </h2>
+          <h4 class="text-black/50 font-semibold">Dec 01, 2022</h4>
+        </div>
+
+        <div class="flex flex-col overflow-hidden gap-4 h-[600px]">
+          <img
+            src="/ridge-kv.jpg"
+            alt=""
+            class="object-cover w-full h-full hover:scale-[1.02] hover:brightness-75 transition duration-1000 ease-in-out cursor-pointer"
+          />
+          <h2
+            class="text-4xl font-semibold cursor-pointer hover:text-sky duration-200 ease-out"
+          >
+            Introducing Ridge
+          </h2>
+          <h4 class="text-black/50 font-semibold">Nov 16, 2022</h4>
+        </div>
+      </div>
+      <button
+        class="w-full bg-white py-12 font-semibold text-2xl hover:bg-sky hover:text-white duration-500 ease-in-out"
+      >
+        See all news
+      </button>
+    </section>
   </body>
 </html>
