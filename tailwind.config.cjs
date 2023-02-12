@@ -9,6 +9,9 @@ module.exports = {
         sky: '#027aef',
         myGray: '#808085',
       },
+      fontFamily: {
+        centra: ['centra', 'monospace'],
+      },
     },
   },
   plugins: [],
