@@ -33,6 +33,7 @@
       src="/hero-vid.mp4"
       loop
       muted
+      autoplay
       class="absolute top-0 left-0 w-screen h-screen overflow-hidden object-cover"
     ></video>
     <div
@@ -387,9 +388,7 @@
     </section>
 
     <!-- newsletter section -->
-    <section
-      class="flex bg-white items-center justify-center py-24 px-[25rem] gap-14"
-    >
+    <section class="flex bg-white py-24 px-[25rem] gap-14">
       <div class="flex flex-col gap-6 flex-1">
         <h1 class="text-3xl font-semibold">Sign up to our newsletter</h1>
         <p>
@@ -406,11 +405,86 @@
         <input class="bg-bone p-5" type="email" placeholder="Email" />
         <input class="bg-bone p-5" type="text" placeholder="Country" />
         <button
-          class="bg-black p-5 uppercase tracking-widest text-white self-end w-[260px]"
+          class="bg-black p-5 uppercase font-semibold tracking-widest text-white self-end w-[260px]"
         >
           Subscribe
         </button>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-myGray text-white w-screen h-screen flex flex-col justify-center px-14"
+    >
+      <div class="flex justify-between border-b-[1px] border-white/50 pb-14">
+        <img src="/logo-icon.svg" alt="" />
+        <button
+          class="bg-black p-5 px-14 uppercase font-semibold tracking-widest text-white"
+        >
+          Find Retailers
+        </button>
+      </div>
+
+      <div
+        class="flex justify-between font-semibold text-lg py-14 border-b-[1px] border-white/50"
+      >
+        <div class="flex flex-col gap-3">
+          <h3 class="mb-6">Products</h3>
+          <a href="#">Cases</a>
+          <a href="#">Fans</a>
+          <a href="#">Power Supplies</a>
+          <a href="#">Water Cooling</a>
+          <a href="#">Accessories</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="mb-6">Community</h3>
+          <a href="#">ModHQ</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="mb-6">Support</h3>
+          <a href="#">Downloads</a>
+          <a href="#">Knowledge base</a>
+          <a href="#">Create support ticket</a>
+          <a href="#">Warranty information</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="mb-6">About</h3>
+          <a href="#">Our story</a>
+          <a href="#">Design process</a>
+          <a href="#">Timeline</a>
+          <a href="#">Values</a>
+          <a href="#">Careers</a>
+          <a href="#">News</a>
+          <a href="#">Investors</a>
+        </div>
+
+        <div class="flex flex-col border-l-[1px] border-white/50 px-14">
+          <h3 class="mb-10">Global headquarters</h3>
+          <p>Fractal Gaming AB</p>
+          <p>Victor Hasselblads gata 16A</p>
+          <p>421 31 Västra Frölunda</p>
+          <p>Sweden</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between py-14">
+        <div class="flex gap-10 invert items-center">
+          <img src="/facebook.png" alt="" class="cursor-pointer w-6" />
+          <img src="/youtube.png" alt="" class="w-8 cursor-pointer" />
+          <img
+            src="/twitter.png"
+            alt=""
+            class="brightness-[0] cursor-pointer w-6"
+          />
+          <img src="/instagram.png" alt="" class="cursor-pointer w-6" />
+        </div>
+        <div class="flex gap-10 font-semibold">
+          <a href="#">Copyright 2023 Fractal Design</a>
+          <a href="#">Warranty information</a>
+          <a href="#">Legal</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

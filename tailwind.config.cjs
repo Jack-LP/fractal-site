@@ -7,6 +7,7 @@ module.exports = {
         charcoal: '#131313',
         bone: '#f1f1f2',
         sky: '#027aef',
+        myGray: '#808085',
       },
     },
   },
